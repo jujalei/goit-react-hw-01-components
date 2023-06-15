@@ -1,40 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-weight: normal;
-  font-family: 'Poppins', sans-serif;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-p {
-  text-align: center;
-}
-
-body {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
-}
-
-.profile-container {
-  position: relative;
-  background-color: rgb(255, 255, 255, 0.7);
-  width: 400px;
+.profile {
+  margin-top: 50px;
   padding-top: 50px;
-  border-radius: 15px;
-  box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.2);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,12 +64,12 @@ body {
 
 .posts-info span {
   display: block;
-  margin-bottom: 4px;
 }
 
 .label {
   font-size: 20px;
   color: rgb(110, 168, 235);
+  margin-bottom: 4px;
 }
 
 .quantity {
