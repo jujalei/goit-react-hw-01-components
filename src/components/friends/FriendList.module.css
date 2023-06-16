@@ -1,0 +1,65 @@
+.container {
+  width: 350px;
+
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.2);
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.friendList {
+  composes: container;
+  list-style: none;
+  margin-bottom: 50px;
+}
+
+.item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(148, 188, 233, 0.3);
+
+  border-radius: 15px;
+}
+
+.wrapper {
+  position: relative;
+  margin-left: 50px;
+}
+
+.status {
+  position: absolute;
+  top: 60px;
+  left: 50px;
+  width: 17px;
+  height: 17px;
+  border-radius: 100px;
+}
+
+.true {
+  background-color: green;
+}
+.false {
+  background-color: red;
+}
+
+.avatar {
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  border-radius: 100px;
+  padding: 15px;
+}
+.name {
+  margin-left: 50px;
+  font-size: 28px;
+  color: rgb(2, 39, 82);
+}
