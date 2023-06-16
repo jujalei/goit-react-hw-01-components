@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { StatsItem } from './StatsItem';
-import './Statistics.css';
+import styles from './Statistics.module.css';
 
 export const Statistics = ({ stats, title }) => {
   const groupedStats = stats.reduce((acc, data) => {
@@ -21,12 +21,12 @@ export const Statistics = ({ stats, title }) => {
 
   return (
     <>
-      <section className="statistics container">
-        {title && <h2 className="title">{title}</h2>}
-        <ul className="stat-list">
+      <section className={styles.statistics}>
+        {title && <h2 className={styles.title}>{title}</h2>}
+        <ul className={styles.statList}>
           {groupedStatsArray.map(data => {
             return (
-              <li key={data.label} className="item">
+              <li key={data.label} className={styles.item}>
                 <StatsItem label={data.label} percentage={data.percentage} />
               </li>
             );

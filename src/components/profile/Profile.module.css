@@ -1,4 +1,13 @@
+.container {
+  width: 400px;
+
+  background-color: rgb(255, 255, 255, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 60px 5px rgba(0, 0, 0, 0.2);
+}
+
 .profile {
+  composes: container;
   margin-top: 50px;
   padding-top: 50px;
 
@@ -8,11 +17,10 @@
   align-items: center;
 }
 
-.img-container {
-  display: block;
+.avatar {
   width: 150px;
   height: 150px;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin-left: auto;
   margin-right: auto;
   background: radial-gradient(
@@ -30,30 +38,28 @@
   color: rgb(110, 168, 235);
 }
 
-.full-name {
-  margin-bottom: 20px;
-}
-
-.tag {
-  margin-bottom: 18px;
-}
-
-.place {
-  margin-bottom: 70px;
-}
-
-.full-name {
+.name {
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 1px;
   color: rgb(2, 39, 82);
+  margin-bottom: 20px;
 }
 
-.posts-info {
+.tag {
+  composes: info;
+  margin-bottom: 18px;
+}
+
+.location {
+  composes: info;
+  margin-bottom: 70px;
+}
+
+.stats {
   width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 
   background-color: rgba(148, 188, 233, 0.3);
   padding-top: 10px;
@@ -62,8 +68,9 @@
   text-align: center;
 }
 
-.posts-info span {
-  display: block;
+.list {
+  display: flex;
+  flex-direction: column;
 }
 
 .label {
